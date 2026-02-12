@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <import type="com.example.hseapp.R"/>
+        <variable
+            name="period"
+            type="com.example.hseapp.datamodels.Period"/>
+    </data>
+
+    <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginStart="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:strokeWidth="0dp"
+        app:strokeColor="@color/white">
+        
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/period_horiz_padding"
+            android:paddingEnd="@dimen/period_horiz_padding"
+            android:paddingTop="@dimen/period_vert_padding"
+            android:paddingBottom="@dimen/period_vert_padding">
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text = "Course"
+                android:text="@{period.period}"
+                android:textSize="@dimen/font"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="@color/not_selected"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

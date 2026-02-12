@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/padding_space"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/publication_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingBottom="@dimen/tab_top_start_margin"
+        android:text="PUBLICATION TIME"
+        android:textColor="@color/not_selected"
+        android:textSize="@dimen/msg_number_size"
+        android:fontFamily="@font/inter_medium"/>
+
+    <TextView
+        android:id="@+id/publication_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/publication_info"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/submission_background"
+        android:paddingStart="@dimen/tab_top_start_margin"
+        android:paddingEnd="@dimen/tab_top_start_margin"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:text="12.01.22"
+        android:textSize="@dimen/msg_number_size"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_medium"/>
+
+    <TextView
+        android:id="@+id/publication_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/publication_info"
+        app:layout_constraintStart_toEndOf="@id/publication_day"
+        android:layout_marginStart="@dimen/course_space"
+        android:background="@drawable/submission_background"
+        android:paddingStart="@dimen/tab_top_start_margin"
+        android:paddingEnd="@dimen/tab_top_start_margin"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:text="14:20"
+        android:textSize="@dimen/msg_number_size"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_medium"/>
+
+    <TextView
+        android:id="@+id/deadline_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/publication_day"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingBottom="@dimen/tab_top_start_margin"
+        android:layout_marginTop="@dimen/padding_space"
+        android:text="DEADLINE TIME"
+        android:textColor="@color/not_selected"
+        android:textSize="@dimen/msg_number_size"
+        android:fontFamily="@font/inter_medium"/>
+
+    <TextView
+        android:id="@+id/deadline_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/deadline_info"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/submission_background"
+        android:paddingStart="@dimen/tab_top_start_margin"
+        android:paddingEnd="@dimen/tab_top_start_margin"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:text="27.01.22"
+        android:textSize="@dimen/msg_number_size"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_medium"/>
+
+    <TextView
+        android:id="@+id/deadline_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/deadline_info"
+        app:layout_constraintStart_toEndOf="@id/deadline_day"
+        android:layout_marginStart="@dimen/course_space"
+        android:background="@drawable/submission_background"
+        android:paddingStart="@dimen/tab_top_start_margin"
+        android:paddingEnd="@dimen/tab_top_start_margin"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:text="23:59"
+        android:textSize="@dimen/msg_number_size"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_medium"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

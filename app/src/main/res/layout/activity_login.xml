@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.LoginActivity"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="171dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="HSE Connect"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="@color/primary_hse_blue"
+            android:textSize="28sp" />
+
+        <LinearLayout
+            android:id="@+id/roleContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="27dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/stud"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/role_background"
+                android:gravity="center"
+                android:text="Student"
+                android:fontFamily="@font/inter_semibold"
+                android:textAllCaps="false"
+                android:textColor="@color/primary_hse_blue"
+                android:textSize="@dimen/font"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/assist"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="Assistant"
+                android:fontFamily="@font/inter_semibold"
+                android:textColor="@color/not_selected"
+                android:textSize="@dimen/font"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/prof"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="Professor"
+                android:fontFamily="@font/inter_semibold"
+                android:textColor="@color/not_selected"
+                android:textSize="@dimen/font"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="27dp"
+            android:autofillHints="emailAddress"
+            app:layout_constraintTop_toBottomOf="@id/roleContainer"
+            android:background="@drawable/loginpass_background"
+            android:hint="HSE Email"
+            android:fontFamily="@font/inter_medium"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/not_selected"
+            android:textSize="@dimen/font"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="27dp"
+            android:background="@drawable/loginpass_background"
+            app:layout_constraintTop_toBottomOf="@id/login"
+            android:hint="Password"
+            android:fontFamily="@font/inter_medium"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textColorHint="@color/not_selected"
+            android:textSize="@dimen/font"
+            android:autofillHints="password" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="56dp"
+            android:background="@drawable/login_background"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:paddingStart="163.5dp"
+            android:paddingEnd="163.5dp"
+            android:text="Log In"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:text="Forgot Password"
+            android:fontFamily="@font/inter_semibold"
+            android:textColor="@color/primary_hse_blue"
+            android:textSize="@dimen/font"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="137dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Can't log in?"
+            android:fontFamily="@font/inter_semibold"
+            android:textColor="@color/primary_hse_blue"
+            android:textSize="@dimen/font"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

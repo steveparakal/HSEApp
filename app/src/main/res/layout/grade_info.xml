@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <import type="com.example.hseapp.R"/>
+        <variable
+            name="grade"
+            type="com.example.hseapp.datamodels.Grade"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/counter_margin">
+
+        <TextView
+            android:id="@+id/hw_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="16"
+            android:text="@{grade.num}"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="@dimen/font"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/hw_num_subtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hw_num"
+            android:text="No."
+            android:fontFamily="@font/inter_semibold"
+            android:textColor="@color/not_selected"
+            android:textSize="@dimen/sub_text_size"/>
+
+        <TextView
+            android:id="@+id/hw_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/hw_num"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/profile_corner"
+            tools:text="Venus and Mars"
+            android:text="@{grade.name}"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="@dimen/font"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/hw_name_subtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/hw_name"
+            app:layout_constraintTop_toBottomOf="@id/hw_name"
+            android:text="Name"
+            android:fontFamily="@font/inter_semibold"
+            android:textColor="@color/not_selected"
+            android:textSize="@dimen/sub_text_size"/>
+
+        <TextView
+            android:id="@+id/hw_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="10"
+            android:text="@{grade.grade}"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="@dimen/font"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/hw_grade_subtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/hw_grade"
+            app:layout_constraintTop_toBottomOf="@id/hw_grade"
+            android:text="Grade"
+            android:fontFamily="@font/inter_semibold"
+            android:textColor="@color/not_selected"
+            android:textSize="@dimen/sub_text_size"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

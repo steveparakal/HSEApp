@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/inner_toolbar"
+            android:id="@+id/submission_toolbar"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/submission_toolbar"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:paddingStart="@dimen/counter_margin"
+                android:paddingEnd="@dimen/counter_margin">
+
+                <include layout="@layout/submission_info"
+                    android:id="@+id/submission_info"/>
+
+                <include layout="@layout/submission_description"/>
+
+                <include layout="@layout/submission_time"/>
+
+                <include layout="@layout/submission_task"/>
+
+                <include layout="@layout/submission_area"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

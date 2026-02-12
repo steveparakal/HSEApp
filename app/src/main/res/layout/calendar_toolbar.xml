@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/toolbar_background"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_space"
+            android:paddingBottom="@dimen/space_margin"
+            android:paddingStart="@dimen/space_margin"
+            android:paddingEnd="@dimen/space_margin"
+            android:textSize="@dimen/actionbar_title_size"
+            android:fontFamily="@font/inter_semibold"
+            android:textColor="@color/black"
+            tools:text="Title"
+            app:drawableEndCompat="@drawable/ic_arrow_side"
+            android:drawablePadding="@dimen/space_margin"/>
+
+
+        <TextView
+            android:id="@+id/second_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_space"
+            android:paddingStart="@dimen/space_margin"
+            android:paddingEnd="@dimen/space_margin"
+            android:paddingBottom="@dimen/space_margin"
+            android:textSize="@dimen/actionbar_title_size"
+            android:fontFamily="@font/inter_semibold"
+            android:textColor="@color/black"
+            tools:text="Title"
+            android:visibility="gone"/>
+    </LinearLayout>
+</layout>

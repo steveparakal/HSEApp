@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/course_description_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Description"
+            android:textSize="@dimen/font"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_medium"
+            android:layout_marginBottom="@dimen/period_horiz_padding"/>
+
+        <TextView
+            android:id="@+id/course_dsc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/msgr_size"
+            android:fontFamily="@font/inter_regular"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus bibendum ante id auctor. Aenean quis fermentum orci, a laoreet dui. Curabitur et dolor eleifend, pulvinar nisl sit amet, interdum lacus. Duis nec felis id ligula porta iaculis. Curabitur ultrices quis tellus sodales hendrerit. Vivamus pretium enim ac risus interdum sollicitudin. Vestibulum euismod est enim, a iaculis nunc tempus eget. Sed quis volutpat lectus. Integer lobortis blandit odio, quis imperdiet lacus sodales a. Donec posuere odio sit amet convallis interdum. Nam eu purus arcu. Nam congue dolor vel quam semper tristique. Pellentesque nec leo at neque cursus congue. Duis vel lorem elit. Sed non maximus ipsum, non blandit augue. Aliquam quis leo placerat, euismod nibh at, faucibus enim."
+            android:textColor="@color/not_selected"/>
+    </LinearLayout>
+</layout>
+

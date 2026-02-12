@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_space"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/course_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COURSE"
+            android:textColor="@color/not_selected"
+            android:textSize="@dimen/msg_number_size"
+            android:fontFamily="@font/inter_medium"/>
+
+        <TextView
+            android:id="@+id/course_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MACHINE LEARNING 1"
+            android:layout_marginTop="@dimen/course_space"
+            android:textColor="@color/primary_hse_blue"
+            android:textSize="@dimen/msg_number_size"
+            android:fontFamily="@font/inter_medium"/>
+
+        <TextView
+            android:id="@+id/assignment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_space"
+            android:text="NAME"
+            android:textColor="@color/not_selected"
+            android:textSize="@dimen/msg_number_size"
+            android:fontFamily="@font/inter_medium"/>
+
+        <TextView
+            android:id="@+id/assignment_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Venus and Mars"
+            android:layout_marginTop="@dimen/course_space"
+            android:textColor="@color/black"
+            android:textSize="@dimen/actionbar_title_size"
+            android:fontFamily="@font/inter_semibold"/>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/profile_img"
+            app:cardCornerRadius="@dimen/divider_margin"
+            android:layout_width="@dimen/user_profile_img"
+            android:layout_height="@dimen/user_profile_img"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/period_horiz_padding">
+
+            <ImageView
+                android:id="@+id/prfimg"
+                android:layout_width="@dimen/user_profile_img"
+                android:layout_height="@dimen/user_profile_img"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_hse_blue"
+            android:fontFamily="@font/inter_medium"
+            android:text="STUDENT"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/msg_number_size"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/profile_img"
+            app:layout_constraintTop_toBottomOf="@id/role"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_medium"
+            android:text="Steve George Parakal"
+            android:textSize="@dimen/font"/>
+
+        <TextView
+            android:id="@+id/course_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/not_selected"
+            android:fontFamily="@font/inter_regular"
+            android:text="BPAD Group 193"
+            android:textSize="@dimen/msgr_size"
+            android:paddingBottom="@dimen/tab_top_start_margin"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/emailbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_background"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Email"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/msgr_size"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+</layout>

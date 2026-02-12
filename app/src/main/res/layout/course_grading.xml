@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/img_corner">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grading Formula"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_medium"
+            android:layout_marginBottom="@dimen/period_horiz_padding"/>
+
+        <TextView
+            android:id="@+id/course_grding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/msg_padding"
+            android:textColor="@color/black"
+            android:textSize="@dimen/msgr_size"
+            tools:text=" 0.25*(0.3*Exam1 + 0.7*(0.3125*Oral1 + 0.25*W1 + 0.25*Q1 + 0.1875*H1)) +  0.75*(0.3*Exam2 + 0.7*(0.3125*Oral2 + 0.25*W2 + 0.25*Q2 + 0.1875*H2)))"
+            android:background="@drawable/loginpass_background"
+            android:fontFamily="@font/robotomono_medium"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="com.example.hseapp.R"/>
+        <variable
+            name="course"
+            type="com.example.hseapp.datamodels.Course"/>
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/courses_hse_blue"
+        app:strokeWidth="0dp"
+        app:strokeColor="@color/white"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp">
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="@{course.name}"
+                android:textColor="@color/primary_hse_blue"
+                android:textSize="@dimen/font"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Course" />
+
+            <TextView
+                android:id="@+id/msgcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/subject"
+                app:layout_constraintTop_toTopOf="parent"
+                android:padding="@dimen/msg_padding"
+                android:visibility="gone"
+                android:layout_marginStart="@dimen/tab_top_start_margin"
+                android:layout_marginTop="@dimen/msg_padding"
+                tools:text = "123"
+                android:text="@{course.msgCount}"
+                android:textSize="@dimen/msg_number_size"
+                android:fontFamily="@font/inter_medium"
+                android:background="@drawable/msg_counter"
+                android:textColor="@color/not_selected"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>
