@@ -84,8 +84,3 @@ cd HSEApp
 This project was developed as a university assignment. No license is currently specified — please contact the author before reusing or distributing any part of this code.
 
 ---
-
-## Author
-
-**steveparakal**  
-[GitHub Profile](https://github.com/steveparakal)
